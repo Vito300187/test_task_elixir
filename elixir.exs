@@ -1,4 +1,6 @@
-arr = [6, 1, 12, 5, 7]
-arr = Enum.take_every(arr,2)
-arr = Enum.map(arr, fn(x) -> x * 3 end)
-IO.puts arr
+arr = [6, 1, 12, 5, 7] # Стандартный массив
+arr = Enum.take_every(arr,2) # метод take_every с параметрами, позволяет взять каждое второе
+# значение
+arr = Enum.map(arr, fn(x) -> x * 3 end) # Метод map перебирает значения оставшегося массива и
+# умножает каждое значение на 3
+IO.puts arr # Вывод строки массива
